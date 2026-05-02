@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Easymotor
 
-## Getting Started
+A lightweight multilingual SEO issue-solving framework for the automotive and
+motorcycle niche.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router with TypeScript
+- Tailwind CSS with `@tailwindcss/typography`
+- JSON files for CMS content
+- Simple cookie-based admin login
+
+## Setup
+
+Copy `.env.local.example` to `.env.local`. Backoffice access uses
+`ADMIN_USERNAME`, `ADMIN_PASSWORD`, and
+`ADMIN_SESSION_SECRET` (defaults: `test` / `test123` for local dev if unset).
+
+Content lives in `data/content.json`. `data/gemini-feed.json` is the raw seed
+feed that can be normalized into the CMS file.
+
+## Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Public routes:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `/en`, `/es`, `/pt`
+- `/[lang]/[brand]`
+- `/[lang]/[brand]/[model]`
+- `/[lang]/[brand]/[model]/[issue]`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Admin routes:
 
-## Learn More
+- `/admin/login`
+- `/admin`
 
-To learn more about Next.js, take a look at the following resources:
+## Feed Ingestion
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run ingest -- ./feed.json
+# Example seed (Gemini-style array in repo):
+npm run ingest -- ./data/gemini-feed.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+See `scripts/README.md` for the supported JSON and CSV shapes.
 
-## Deploy on Vercel
+## SEO Strategy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The landing page filters only link to real generated pages:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/[lang]/[brand]`
+- `/[lang]/[brand]/[model]`
+- `/[lang]/[brand]/[model]/[issue]`
+
+Those pages generate metadata from the JSON content, including brand, model,
+version/year text, and issue names.
+
+## Deployment
+
+Deploy with any Next.js-capable host. Firebase App Hosting can still host the
+Next.js app, but no database or storage service is required for content.

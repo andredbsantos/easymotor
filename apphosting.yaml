@@ -1,0 +1,21 @@
+runConfig:
+  minInstances: 0
+  maxInstances: 2
+  concurrency: 80
+  cpu: 1
+  memoryMiB: 512
+
+env:
+  - variable: NEXT_PUBLIC_SITE_URL
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: ADMIN_USERNAME
+    availability:
+      - RUNTIME
+  - variable: ADMIN_PASSWORD
+    availability:
+      - RUNTIME
+  - variable: ADMIN_SESSION_SECRET
+    availability:
+      - RUNTIME

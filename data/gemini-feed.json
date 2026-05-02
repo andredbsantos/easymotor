@@ -1,0 +1,466 @@
+[
+    {
+        "brand": "Volkswagen",
+        "model": "Golf (Gen IV-VIII)",
+        "issues": [
+            "DSG Mechatronic Failure: Replace control unit and clutch pack.",
+            "TSI Timing Chain Stretch: Replace chain and tensioner assembly.",
+            "Excessive Oil Consumption (TFSI): Rebuild with updated piston rings.",
+            "Water Pump Leak: Replace with aluminum impeller pump.",
+            "DPF Blockage (TDI): Forced regeneration or chemical cleaning.",
+            "EGR Valve Clogging: Ultrasonic cleaning or valve replacement.",
+            "Suspension Knocking: Replace anti-roll bar bushes and top mounts.",
+            "Electrical Ground Faults: Trace and repair chassis grounding points.",
+            "Intake Carbon Buildup: Walnut blast intake valves (direct injection issue).",
+            "Heater Core Leak: Replace heater matrix and flush coolant."
+        ]
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Polo (Gen 9N-AW)",
+        "issues": [
+            "1.2 TSI Engine Rattle: Replace timing chain kit immediately.",
+            "DSG Gearbox Judder: Perform software update or replace clutches.",
+            "AC Compressor Failure: Replace compressor and regas system.",
+            "Braking Judder: Skim or replace warped front brake discs.",
+            "Cabin Misting (Water Ingress): Clear blocked scuttle panel drains.",
+            "Sudden Power Loss: Clean or replace EGR valve.",
+            "Starting Trouble: Replace faulty ignition coil packs.",
+            "Handbrake Travel: Adjust parking brake cable tension.",
+            "Infotainment Black Screen: Hard reset or replace display unit.",
+            "Suspension Knocking: Replace worn front drop links."
+        ]
+    },
+    {
+        "brand": "Seat",
+        "model": "Ibiza (Gen II-V)",
+        "issues": [
+            "Engine Misfires (Petrol): Replace spark plugs and ignition coils.",
+            "Timing Chain Rattles: Install updated timing chain tensioner.",
+            "EGR Valve Failure: Replace exhaust gas recirculation valve.",
+            "Sticky Clutch Pedal: Lubricate or replace clutch master cylinder.",
+            "Turbocharger Whine: Inspect and replace failing turbo bearings.",
+            "Power Window Motor Fail: Replace window regulator assembly.",
+            "Aircon Refrigerant Leak: Replace damaged AC condenser.",
+            "Water Ingress to Boot: Reconnect rear wiper washer pipe.",
+            "DPF Blockage: Perform high-RPM highway drive for regeneration.",
+            "Instrument Cluster Faults: Solder repair or replace dashboard cluster."
+        ]
+    },
+    {
+        "brand": "Seat",
+        "model": "Leon (Gen I-IV)",
+        "issues": [
+            "Turbocharger Defects (TSI): Replace turbo unit and oil feed lines.",
+            "Hybrid Electronics Failure: Update hybrid control module software.",
+            "DPF Blockage: Chemical clean of particulate filter.",
+            "Electronic Handbrake Fault: Replace electronic parking brake actuator.",
+            "LED Headlight Condensation: Reseal or replace headlight housing.",
+            "Coolant Sensor Failure: Replace sensor to fix high engine idling.",
+            "Airbag Warning Light: Fix faulty wiring loom beneath driver's seat.",
+            "Carbon Deposits on Intake: Walnut blast intake manifold runner flaps.",
+            "Cambelt/Water Pump Failure: Preemptive replacement every 60k miles.",
+            "Air Conditioning Failure: Replace leaking AC condenser."
+        ]
+    },
+    {
+        "brand": "Seat",
+        "model": "Arona",
+        "issues": [
+            "1.5 TSI Oil Consumption: Monitor oil levels; rebuild engine if severe.",
+            "DSG Shifting Delays: Recalibrate transmission software.",
+            "Infotainment Screen Freeze: Perform system reboot and firmware update.",
+            "Brake Squeal: Apply anti-squeal compound or replace pads.",
+            "Handbrake Loose Travel: Adjust handbrake adjuster nut (Recall issue).",
+            "Start-Stop System Failure: Replace aging 12V AGM battery.",
+            "Dashboard Plastic Rattles: Apply felt tape to dashboard seams.",
+            "Double Belt Buckle Damage: Replace seatbelt stalk (Recall issue).",
+            "Aircon Cooling Loss: Recharge system and check for micro-leaks.",
+            "Engine Hesitation: Update ECU to fix throttle response delay."
+        ]
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "T-Roc",
+        "issues": [
+            "DSG Transmission Jerking: Change fluid every 40k miles or replace clutches.",
+            "Seatbelt Retractor Jam: Replace faulty front-right seatbelt mechanism.",
+            "High Oil Consumption: Inspect piston rings and valve seals.",
+            "Electric Parking Brake Error: Update module or replace caliper actuator.",
+            "Engine Cover Detachment: Remove or secure engine cover (Recall issue).",
+            "Brake Judder: Replace warped brake discs and pads.",
+            "Wheel Bearing Hum: Replace worn wheel hub bearings.",
+            "Rear Spoiler Debonding: Re-bond spoiler sections (Recall issue).",
+            "Limp Mode Triggering: Scan and replace faulty engine sensors.",
+            "Infotainment Glitches: Update system software via dealer."
+        ]
+    },
+    {
+        "brand": "Audi",
+        "model": "A3 (Gen 8L-8Y)",
+        "issues": [
+            "2.0 TDI Oil Pump Drive Wear: Upgrade hexagonal drive shaft to hardened version.",
+            "Suspension Creaking: Replace front top mounts and control arm bushes.",
+            "Fuel Pipe Splitting (TDI): Replace lines and add vibration dampers.",
+            "Diverter Valve Breakage (TFSI): Upgrade to revised piston-type diverter valve.",
+            "Drooping Rear Wiper: Reposition arm spline with a puller tool.",
+            "Door Lock Malfunction: Replace faulty door lock actuator mechanism.",
+            "Heater Matrix Blockage: Flush cooling system and replace heater core.",
+            "Infotainment Freezing: Update MMI software or replace main unit.",
+            "Rusty Front Wings: Repair paintwork or replace front fenders.",
+            "Steering Wheel Vibration: Replace worn tie rods and align wheels."
+        ]
+    },
+    {
+        "brand": "Skoda",
+        "model": "Octavia (Gen I-IV)",
+        "issues": [
+            "DSG-7 (DQ200) Clutch Wear: Replace dry clutch pack and mechatronic unit.",
+            "Water Pump Plastic Impeller Failure: Replace with metal-impeller water pump.",
+            "1.5 TSI Cold Start Hesitation: Apply manufacturer ECU software update.",
+            "Airbag SRS Warning Light: Replace faulty clock-spring or under-seat wiring.",
+            "Front Control Arm Bushings: Replace with heavy-duty polyurethane bushes.",
+            "Infotainment (Columbus) Freeze: Reboot system or apply firmware patch.",
+            "Body Rust (Arches/Sills): Treat rust and repaint vulnerable lower sections.",
+            "DPF/EGR Failure (TDI): Chemical cleaning or forced electronic regeneration.",
+            "Rain/Light Sensor Fault: Replace faulty sensor array behind rearview mirror.",
+            "Cabin Wind Noise: Adjust door seals and check window alignment."
+        ]
+    },
+    {
+        "brand": "Volkswagen",
+        "model": "Touran",
+        "issues": [
+            "Timing Chain Tensioner: Preemptive replacement of chain and tensioner.",
+            "DPF Clogging: High-speed drive to force passive regeneration.",
+            "Water Pump Failure: Replace unit and flush cooling system.",
+            "DSG Gearbox Hesitation: Change mechatronic fluid and recalibrate.",
+            "Electric Window Regulator Snap: Replace window lifting mechanism.",
+            "EGR Valve Blockage: Remove and manually decoke the valve assembly.",
+            "Suspension Knocking: Replace worn drop links and anti-roll bushes.",
+            "Aircon Compressor Failure: Replace compressor and recharge refrigerant.",
+            "Boot Lock Mechanism Stick: Lubricate or replace tailgate latch.",
+            "Water Leaking into Footwell: Clear debris from scuttle panel drains."
+        ]
+    },
+    {
+        "brand": "Peugeot",
+        "model": "208 (Gen I-II)",
+        "issues": [
+            "1.2 PureTech Wet Belt Degradation: Replace belt every 40k miles, clean oil pickup.",
+            "AdBlue System Failure: Replace urea injector or complete tank assembly.",
+            "Infotainment Touchscreen Freeze: Update firmware via USB or replace screen.",
+            "Suspension Clunking: Replace worn MacPherson strut top mounts.",
+            "Central Locking Actuator Failure: Replace door latch solenoid mechanism.",
+            "Indicator Stalk (COM2000) Fault: Replace the steering column switch assembly.",
+            "DPF Blockage (HDi): Refill EOLYS fluid and force DPF regeneration.",
+            "Engine Misfire/Stalling: Replace faulty ignition coil packs.",
+            "Turbocharger Whine: Replace turbo and clear oil feed lines.",
+            "Brake Disc Premature Wear: Upgrade to higher quality brake rotors and pads."
+        ]
+    },
+    {
+        "brand": "Peugeot",
+        "model": "2008 (Gen I-II)",
+        "issues": [
+            "Jerky Automatic Gearbox (ETG): Recalibrate clutch bite point software.",
+            "Oil Pressure Drop (Wet Belt): Clean oil strainer and replace degraded timing belt.",
+            "Faulty ABS/Wheel Sensors: Run diagnostic and replace damaged wheel speed sensor.",
+            "Suspension Wishbone Bolt Snap: Replace bolts with upgraded parts (Recall).",
+            "Climate Control/AC Failure: Regas system or replace failing compressor clutch.",
+            "Touchscreen Bug/Freeze: Apply manufacturer software patch.",
+            "Dashboard Ticking Noise: Replace faulty heater blend door actuator.",
+            "Fuel Leak Risk: Inspect and replace cracked fuel lines (Recall).",
+            "Stiff Manual Clutch: Replace worn clutch friction disc and pressure plate.",
+            "Leaky Door Seals: Replace rubber weatherstripping around doors."
+        ]
+    },
+    {
+        "brand": "Peugeot",
+        "model": "308 (Gen I-III)",
+        "issues": [
+            "Turbocharger Malfunction/Smoke: Replace turbo and clean intercooler.",
+            "Timing Chain Rattle (Petrol): Replace stretched chain and tensioner guide.",
+            "DPF/Anti-Pollution Warning: Chemically clean diesel particulate filter.",
+            "High Oil Consumption: Inspect valve stem seals and piston rings.",
+            "Infotainment Reboot Loops: Update head unit software.",
+            "Electronic Handbrake Stick: Replace electronic parking brake motor.",
+            "Cooling Fan Constantly Running: Replace faulty coolant temperature sensor.",
+            "Water in Front Footwells: Clear blocked scuttle drains under windshield.",
+            "Gears Slipping: Replace worn clutch or automatic transmission fluid.",
+            "Car Pulling to Left: Perform laser wheel alignment and check tracking."
+        ]
+    },
+    {
+        "brand": "Peugeot",
+        "model": "3008 (Gen I-II)",
+        "issues": [
+            "1.6 THP Timing Chain Stretch: Replace chain, tensioners, and guides.",
+            "Intake Valve Carbon Buildup: Walnut blast intake valves to restore airflow.",
+            "1.2 PureTech Wet Belt Failure: Preemptive belt replacement and oil strainer clean.",
+            "EGR Valve Carbon Clogging: Remove and soak EGR valve in carbon solvent.",
+            "Traction Battery Overheating (Hybrid): Inspect and apply safety recall fix.",
+            "DPF Blockage on Short Trips: Force active regeneration via diagnostic tool.",
+            "AdBlue Tank Pump Failure: Replace entire AdBlue tank assembly (common PSA fault).",
+            "Infotainment Screen Blanking: Apply software patch to BSI/head unit.",
+            "Suspension Knocking: Replace worn front anti-roll bar drop links.",
+            "Electrical Gremlins: Hard reset of the BSI module via battery disconnect."
+        ]
+    },
+    {
+        "brand": "Citroen",
+        "model": "C3 (Gen I-III)",
+        "issues": [
+            "Sensodrive Gearbox Failure: Replace actuator or clutch pack.",
+            "Starter Motor Failure: Replace faulty starter motor.",
+            "1.2 PureTech Wet Belt: Monitor belt condition through oil filler cap; replace early.",
+            "Airbag Defects / Warning Light: Check under-seat wiring connectors.",
+            "Heavy Front Brake Wear: Replace pads and discs with durable aftermarket parts.",
+            "Squeaking Suspension: Lubricate or replace front suspension bushes.",
+            "Faulty Low Pressure Fuel Pump: Replace pump located in fuel tank.",
+            "Broken Brake Pedal Switch: Replace switch to restore brake lights/cruise control.",
+            "Alternator Failure: Replace alternator and check drive belt tension.",
+            "Water in Fuse Box (Picasso): Repair wiring loom and seal scuttle panel."
+        ]
+    },
+    {
+        "brand": "Citroen",
+        "model": "C4 (Gen I-III)",
+        "issues": [
+            "Engine Misfire: Replace faulty ignition coils or spark plugs.",
+            "Suspension Creaking: Replace worn strut top mounts and bump stops.",
+            "Electrical Wiring Harness Faults: Trace and repair broken wires in door shuts.",
+            "Turbocharger Failure (HDi): Replace turbo unit and clear oil feed pipes.",
+            "EGR Valve Blockage: Remove and clean the EGR assembly.",
+            "Automatic Gearbox Hesitation: Change transmission fluid and reset shift solenoids.",
+            "Timing Belt Wear (Wet Belt): Immediate replacement of oil-bathed timing belt.",
+            "AC Compressor Rattling: Replace compressor and recharge refrigerant.",
+            "Scratched Windshield: Replace poorly designed rigid wiper arms.",
+            "Seat Belt Pre-tensioner Sluggish: Replace seat belt retraction mechanism."
+        ]
+    },
+    {
+        "brand": "Citroen",
+        "model": "Berlingo",
+        "issues": [
+            "AdBlue System Faults: Replace faulty urea pump/tank.",
+            "EGR Valve Failure: Clean or replace stuck exhaust gas recirculation valve.",
+            "Turbocharger Whining: Replace turbo and check for oil starvation.",
+            "Central Locking Wiring Snaps: Repair broken wires in the rubber door gaiter.",
+            "Radio/Infotainment Beeping: Replace the two specific radio fuses to reset.",
+            "Starter Motor Burnout (Stop/Start): Replace starter motor unit.",
+            "Suspension Knocking: Replace worn front suspension ball joints.",
+            "Water in Fuse Box: Reseal windshield scuttle to prevent water dripping.",
+            "Electric Window Failure: Replace burnt out window regulator motor.",
+            "Timing Belt Snapping: Preemptive replacement before recommended interval."
+        ]
+    },
+    {
+        "brand": "Opel",
+        "model": "Corsa (Gen B-F)",
+        "issues": [
+            "Timing Chain Premature Wear: Replace chain and guides (highly common on 1.0/1.2/1.4).",
+            "Electric Power Steering (EPS) Failure: Replace EPS column and torque sensor.",
+            "Clutch Judder (Reversing): Replace dual-mass flywheel and clutch assembly.",
+            "Handbrake Cable Snapping: Replace handbrake cable and adjust tension (Recall).",
+            "Air Conditioning Failure: Recharge refrigerant or replace condenser.",
+            "Rear Wheel Bearing Hum: Press out old bearings and replace.",
+            "Heater Blowing Only Cold: Unblock heater matrix or replace blend door actuator.",
+            "Exhaust System Rust: Replace corroded exhaust mid-pipe and backbox.",
+            "Dashboard Electrical Glitches: Check and clean main battery ground connections.",
+            "Engine Stalling: Clean dirty throttle body and replace air filter."
+        ]
+    },
+    {
+        "brand": "Opel",
+        "model": "Astra (Gen F-L)",
+        "issues": [
+            "1.4 Turbo Timing Chain Wear: Replace stretched chain and tensioner.",
+            "M32 Gearbox Bearing Whine: Rebuild gearbox with upgraded end-case bearings.",
+            "DPF / EGR Clogging (CDTi): Force regeneration or manually clean EGR soot.",
+            "Turbo Actuator Failure: Replace vacuum actuator or complete turbo assembly.",
+            "Suspension Bush Wear: Replace front control arm bushings.",
+            "Water Pump Leak: Replace pump and check timing belt condition.",
+            "1.6 CDTi Oil Pressure Sensor: Replace sensor to stop metallic engine noise.",
+            "Clutch Pipe Vibrating (1.4T): Fit rubber protective sleeve over slave cylinder pipe.",
+            "Brake Pedal Losing Pressure: Replace faulty brake master cylinder (Recall).",
+            "Infotainment Screen Failure: Replace faulty Head Unit (BCU)."
+        ]
+    },
+    {
+        "brand": "Fiat",
+        "model": "Punto (Gen I-III)",
+        "issues": [
+            "Power Steering (City Mode) Failure: Replace EPS motor torque sensor relays.",
+            "Engine ECU Failure (Stalling): Send ECU for specialist rebuild or replacement.",
+            "Valve Cover Oil Leaks: Replace hardened rubber valve cover gasket.",
+            "Clutch Slipping: Replace worn clutch friction disc and pressure plate.",
+            "Coolant System Overheating: Replace leaky radiator hoses or heater matrix.",
+            "Broken Exterior Door Handles: Replace brittle plastic handle mechanisms.",
+            "Exhaust Center Silencer Rust: Weld or replace corroded exhaust pipe.",
+            "Windshield Drain Freeze/Belt Squeal: Reroute or replace poorly designed drain pipe.",
+            "Grinding Steering (Shock Absorbers): Replace worn front shock absorbers and top mounts.",
+            "Exhaust Fumes in Cabin: Seal exhaust leaks near the engine manifold."
+        ]
+    },
+    {
+        "brand": "Fiat",
+        "model": "500 (2007-Present)",
+        "issues": [
+            "Frequent Headlight Bulb Burnout: Upgrade bulb connectors and check voltage.",
+            "Parasitic Battery Drain: Clean ground connections and replace weak battery.",
+            "Hatch/Boot Release Failure: Repair snapped wiring in the tailgate hinge rubber boot.",
+            "Dualogic Gearbox Jerkiness: Top up actuator hydraulic fluid and recalibrate.",
+            "Door Lock Actuator Stick: Lubricate or replace internal door lock mechanism.",
+            "Suspension Clunking: Replace worn front lower control arm ball joints.",
+            "Wheel Bearing Hum: Press in new wheel bearings.",
+            "Coolant Loss/Overheating: Replace brittle plastic thermostat housing.",
+            "Interior Trim Peeling: Reglue or replace cheap interior plastic trims.",
+            "Brake Squeak/Judder: Replace low-quality factory brake pads and discs."
+        ]
+    },
+    {
+        "brand": "Fiat",
+        "model": "Tipo",
+        "issues": [
+            "Gearbox Jerking: Check transmission fluid level and inspect clutch.",
+            "Suspension Knocking: Replace worn bushes and failing shock absorbers.",
+            "Electrical Dashboard Faults: Check BCM connections and battery health.",
+            "Turbo Lag (Diesel): Clean EGR valve and check MAP sensor.",
+            "Clutch Burning Smell: Replace slipping clutch assembly entirely.",
+            "Steering Rack Knocking: Inspect inner tie rods or replace steering rack.",
+            "Aircon Not Cooling: Check for condenser leaks and regas refrigerant.",
+            "Start-Stop Unreliable: Charge or replace the auxiliary AGM battery.",
+            "Window Regulator Failure: Replace burnt out electric window motor.",
+            "Excessive Brake Dust/Wear: Upgrade to ceramic brake pads."
+        ]
+    },
+    {
+        "brand": "Alfa Romeo",
+        "model": "Giulietta",
+        "issues": [
+            "MultiAir Unit Failure (1.4 TB): Replace MultiAir actuator block and change oil.",
+            "Wiring Loom Snap in Tailgate: Splice flexible silicone wires into the boot hinge loom.",
+            "Dashboard Passenger Airbag Bulge: Replace dashboard skin (cosmetic UV heat damage).",
+            "TCT Gearbox Hesitation: Update transmission software or replace clutch packs.",
+            "Gear Knob Snapping: Replace brittle plastic gear knob.",
+            "DNA System Unavailable: Fix battery voltage drop to restore drive modes.",
+            "Inner Tire Wear: Correct aggressive factory negative camber alignment.",
+            "EGR/DPF Issues (JTDM): Force regeneration and clean EGR valve.",
+            "Blue&Me Bluetooth Failure: Disconnect battery to reset or replace module.",
+            "Suspension Squeak: Lubricate or replace front upper wishbone bushes."
+        ]
+    },
+    {
+        "brand": "Peugeot",
+        "model": "206",
+        "issues": [
+            "Rear Axle Bearing Collapse: Replace entire rear axle beam assembly.",
+            "Indicator Stalk (COM2000) Flop: Replace steering column switch unit.",
+            "Airbag Light On (Under Seat): Cut plugs and solder wires directly together.",
+            "AL4 Auto Gearbox Solenoid: Replace pressure regulation solenoids in valve body.",
+            "Water Leak into Footwell: Clear blocked scuttle drains and seal HVAC intake.",
+            "Electric Window Regulator Snaps: Replace window lifting motor/cables.",
+            "Central Locking Actuator Fail: Replace faulty door lock solenoid.",
+            "Exhaust Rust: Replace corroded mild-steel exhaust sections.",
+            "Aircon Compressor Seize: Replace AC compressor and regas system.",
+            "Head Gasket Failure (1.4i): Skim cylinder head and replace gasket."
+        ]
+    },
+    {
+        "brand": "Peugeot",
+        "model": "207",
+        "issues": [
+            "1.6 THP Timing Chain Stretch: Replace chain and hydraulic tensioner.",
+            "Grinding Rear Brakes: Clean calipers and replace scored discs/pads.",
+            "Front Shock Absorber Noise: Replace worn top mount bearings.",
+            "Heated Seat Wiring Melt: Repair damaged wiring loom (Recall).",
+            "Windscreen Wiper Failure: Replace wiper motor or faulty linkage (Recall).",
+            "Battery Earth Cable Break: Replace short ground cable with longer version.",
+            "Aircon Duct Blocking Pedals: Secure loose ventilation trim pieces (Recall).",
+            "Rear Brake Hose Chafing: Reroute hoses away from suspension springs.",
+            "Anti-Pollution Fault (HDi): Refill EOLYS fluid and regenerate DPF.",
+            "Main Engine Fuse Box Fault: Replace BSM (fuse box) with correct spec unit."
+        ]
+    },
+    {
+        "brand": "Citroen",
+        "model": "Xsara/Picasso",
+        "issues": [
+            "Loss of Engine Power (HDi): Replace faulty Mass Air Flow (MAF) sensor.",
+            "Rear Axle Bearing Wear: Replace rear trailing arm bearings or whole axle.",
+            "BSI Electrical Glitches: Perform BSI hard reset sequence.",
+            "Airbag Light Staying On: Solder the loose under-seat wiring connectors.",
+            "Water Damage on Seats: Seal leaking sunroof or door weatherstripping.",
+            "Heater Blower Resistor Blows: Replace resistor pack behind glovebox.",
+            "Clunking Windscreen Wipers: Tighten linkage or replace worn wiper motor.",
+            "Manual Gearbox Bearing Whine: Rebuild gearbox or replace synchromesh.",
+            "Cooling System Hose Leaks: Pressure test and replace perished rubber hoses.",
+            "Suspension Knocking: Replace worn drop links and anti-roll bar bushes."
+        ]
+    },
+    {
+        "brand": "Renault",
+        "model": "Clio (Gen I-V)",
+        "issues": [
+            "Startup Error: Check immobilizer coil or keycard receiver.",
+            "Bumpy Ride: Replace worn front suspension bushes.",
+            "Weak Accelerator: Clean throttle body and check MAP sensor.",
+            "Engine Rattles (VVT): Replace worn timing belt and dephaser pulley.",
+            "Noisy Electric Windows: Lubricate channels or replace regulator motor.",
+            "Sunroof Leaks: Clear blocked drainage tubes with compressed air.",
+            "Rough Idling/Stalling: Clean idle control valve and replace spark plugs.",
+            "Ignition Coil Failure: Replace faulty pencil coil packs.",
+            "Braking Fault Warning: Replace faulty brake pedal switch or ABS sensor.",
+            "EDC Gearbox Switching: Update transmission software or replace clutches."
+        ]
+    },
+    {
+        "brand": "Renault",
+        "model": "Megane (Gen I-IV)",
+        "issues": [
+            "Keycard Reader Failure: Solder internal switches or replace reader.",
+            "1.5 dCi Turbocharger Whine: Replace turbo and clear blocked oil feed pipes.",
+            "Electrical Dashboard Faults: Check BSI module and fuse box for water ingress.",
+            "DPF Blockage (Diesel): Forced electronic regeneration.",
+            "VVT Dephaser Rattle (Petrol): Replace dephaser pulley during cambelt change.",
+            "Suspension Knocking: Replace worn shock absorbers and drop links.",
+            "DP0/AL4 Auto Gearbox Overheat: Replace fluid and shift solenoids.",
+            "Ignition Coil Pack Fail: Replace all coil packs simultaneously.",
+            "Power Steering Fault: Replace electric steering column torque sensor.",
+            "Water in Door Pockets: Clear blocked door drain holes."
+        ]
+    },
+    {
+        "brand": "Renault",
+        "model": "Captur (Gen I-II)",
+        "issues": [
+            "EDC Transmission Jerking: Recalibrate software; replace clutch if worn.",
+            "1.2 TCe Excessive Oil Burn: Monitor levels; rebuild engine if severe.",
+            "1.5 dCi DPF Blockage: Perform sustained highway driving to regenerate.",
+            "Timing Chain Rattle: Replace chain tensioner on higher mileage models.",
+            "Keyless Entry Not Detecting: Change keycard battery or replace reader.",
+            "Interior Dashboard Rattles: Insert felt tape between rubbing plastic panels.",
+            "Air Conditioning Failure: Find condenser leak, repair, and regas.",
+            "Suspension Clunks: Replace worn ball joints and control arm bushes.",
+            "Infotainment Screen Blanking: Apply R-Link software firmware update.",
+            "Hybrid Gearbox Seal Leak: Replace leaking seal to prevent hybrid system fail."
+        ]
+    },
+    {
+        "brand": "Dacia",
+        "model": "Sandero (Gen I-III)",
+        "issues": [
+            "Check Engine Light (EGR): Clean or replace faulty EGR valve.",
+            "CVT Automatic Transmission Lag: Change CVT fluid and filters.",
+            "Dipped Headlights Burning Out: Check alternator voltage; upgrade bulb quality.",
+            "Weak Battery / Starting Issue: Replace factory battery with higher capacity.",
+            "Brake Pedal Squeak: Lubricate brake pedal pivot point.",
+            "Infotainment Screen Freeze: Update firmware via dealer.",
+            "Suspension Clunk: Replace front drop links.",
+            "Central Locking Delay: Replace key fob battery.",
+            "Water in Spare Wheel Well: Reseal rear light clusters.",
+            "Rattling Door Panels: Add sound-deadening material."
+        ]
+    }
+]
