@@ -10,26 +10,32 @@ export function Header({
   pathParts?: string[];
 }) {
   return (
-    <header className="border-b border-zinc-200 bg-white/90 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/90">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link className="text-lg font-bold tracking-tight" href={`/${lang}`}>
-          Easymotor
-        </Link>
-        <nav className="flex items-center gap-3 text-sm">
-          {languages.map((code) => (
-            <Link
-              className={`rounded-full px-3 py-1 ${
-                code === lang
-                  ? "bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950"
-                  : "text-zinc-600 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-900"
-              }`}
-              href={`/${[code, ...pathParts].filter(Boolean).join("/")}`}
-              key={code}
-            >
-              {code.toUpperCase()}
-            </Link>
-          ))}
-        </nav>
+    <header>
+      <div className="h-[3px] bg-red-700" />
+      <div className="bg-white border-b border-neutral-200">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 py-4">
+          <Link
+            className="text-xl font-bold tracking-tight text-neutral-900 hover:text-red-700 transition-colors"
+            href={`/${lang}`}
+          >
+            Easymotor
+          </Link>
+          <nav className="flex items-center gap-5 text-sm font-medium">
+            {languages.map((code) => (
+              <Link
+                className={`transition-colors ${
+                  code === lang
+                    ? "text-red-700 underline underline-offset-4 decoration-red-700"
+                    : "text-neutral-500 hover:text-neutral-900"
+                }`}
+                href={`/${[code, ...pathParts].filter(Boolean).join("/")}`}
+                key={code}
+              >
+                {code.toUpperCase()}
+              </Link>
+            ))}
+          </nav>
+        </div>
       </div>
     </header>
   );

@@ -66,43 +66,63 @@ export default async function BrandPage({ params }: PageProps) {
   return (
     <>
       <Header lang={rawLang} pathParts={[brand.id]} />
-      <main className="mx-auto w-full max-w-6xl px-6 py-12">
-        <section className="mb-10 overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-          <div
-            className="h-56 bg-zinc-100 bg-cover bg-center dark:bg-zinc-900"
-            style={{ backgroundImage: brand.image ? `url(${brand.image})` : undefined }}
-          />
-          <div className="p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
-              Brand overview
-            </p>
-            <h1 className="mt-3 text-4xl font-bold">{brand.name}</h1>
-            <p className="mt-4 max-w-3xl text-lg leading-8 text-zinc-600 dark:text-zinc-300">
-              {localizedValue(brand.seoDescription, rawLang)}
-            </p>
-          </div>
+      <main className="mx-auto w-full max-w-6xl px-4 sm:px-6">
+
+        {/* Brand hero */}
+        <section className="py-10 sm:py-14 border-b border-neutral-200">
+          {brand.image ? (
+            <div
+              className="mb-8 h-56 sm:h-72 bg-neutral-100 bg-cover bg-center border border-neutral-200"
+              style={{ backgroundImage: `url(${brand.image})` }}
+            />
+          ) : null}
+          <p className="text-xs font-semibold uppercase tracking-widest text-red-700 mb-3">
+            Brand Overview
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-neutral-900">
+            {brand.name}
+          </h1>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-neutral-500 max-w-3xl">
+            {localizedValue(brand.seoDescription, rawLang)}
+          </p>
         </section>
 
-        <h2 className="mb-5 text-2xl font-semibold">Models</h2>
-        {models.length === 0 ? (
-          <EmptyState message="No models have been added for this brand yet." />
-        ) : (
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {models.map((model) => (
-              <Link
-                className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950"
-                href={`/${rawLang}/${brand.id}/${model.id}`}
-                key={model.id}
-              >
-                <p className="text-sm text-zinc-500">{model.years}</p>
-                <h3 className="mt-2 text-xl font-semibold">{model.name}</h3>
-                <p className="mt-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-                  {localizedValue(model.seoTitle, rawLang)}
-                </p>
-              </Link>
-            ))}
+        {/* Models list */}
+        <section className="py-8 pb-14">
+          <div className="flex items-center gap-4 mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 shrink-0">
+              Models
+            </p>
+            <div className="flex-1 h-px bg-neutral-200" />
           </div>
-        )}
+
+          {models.length === 0 ? (
+            <EmptyState message="No models have been added for this brand yet." />
+          ) : (
+            <div className="grid gap-px bg-neutral-200 border border-neutral-200 sm:grid-cols-2 lg:grid-cols-3">
+              {models.map((model) => (
+                <Link
+                  className="group bg-white p-5 hover:bg-neutral-50 transition-colors"
+                  href={`/${rawLang}/${brand.id}/${model.id}`}
+                  key={model.id}
+                >
+                  <p className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+                    {model.years}
+                  </p>
+                  <h2 className="mt-1.5 text-lg font-bold text-neutral-900 group-hover:text-red-700 transition-colors">
+                    {model.name}
+                  </h2>
+                  <p className="mt-2 text-xs leading-relaxed text-neutral-500 line-clamp-2">
+                    {localizedValue(model.seoTitle, rawLang)}
+                  </p>
+                  <span className="mt-3 inline-block text-xs font-semibold uppercase tracking-wider text-red-700">
+                    View issues →
+                  </span>
+                </Link>
+              ))}
+            </div>
+          )}
+        </section>
       </main>
     </>
   );

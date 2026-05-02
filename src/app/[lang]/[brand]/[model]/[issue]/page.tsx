@@ -91,33 +91,49 @@ export default async function IssuePage({ params }: PageProps) {
   return (
     <>
       <Header lang={rawLang} pathParts={[brand.id, model.id, issue.id]} />
-      <main className="mx-auto w-full max-w-4xl px-6 py-12">
+      <main className="mx-auto w-full max-w-3xl px-4 sm:px-6 py-10 sm:py-14">
         <script
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(issueJsonLd({ ...relations, lang: rawLang })),
           }}
           type="application/ld+json"
         />
-        <article className="overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
+
+        <article>
+          {/* Issue hero image */}
           {issue.image ? (
             <div
-              className="h-72 bg-zinc-100 bg-cover bg-center dark:bg-zinc-900"
+              className="mb-8 h-56 sm:h-72 bg-neutral-100 bg-cover bg-center border border-neutral-200"
               style={{ backgroundImage: `url(${issue.image})` }}
             />
           ) : null}
-          <div className="p-8">
-            <div className="mb-5 flex flex-wrap items-center gap-3">
-              <StatusBadge status={issue.status} />
-              <span className="text-sm text-zinc-500">
-                {brand.name} {model.name} {model.years}
-              </span>
-            </div>
-            <h1 className="text-4xl font-bold tracking-tight">{title}</h1>
-            <div
-              className="prose prose-zinc mt-8 max-w-none dark:prose-invert"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+
+          {/* Eyebrow */}
+          <div className="flex flex-wrap items-center gap-3 mb-5">
+            <StatusBadge status={issue.status} />
+            <span className="text-xs font-medium uppercase tracking-wider text-neutral-400">
+              {brand.name} · {model.name} · {model.years}
+            </span>
           </div>
+
+          {/* Title */}
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-neutral-900 leading-tight">
+            {title}
+          </h1>
+
+          <div className="mt-6 h-px bg-red-700 w-12" />
+
+          {/* Content */}
+          <div
+            className="prose prose-neutral mt-8 max-w-none
+              prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-neutral-900
+              prose-p:text-neutral-600 prose-p:leading-relaxed
+              prose-a:text-red-700 prose-a:no-underline hover:prose-a:underline
+              prose-strong:text-neutral-900
+              prose-li:text-neutral-600
+              prose-code:text-red-700 prose-code:bg-red-50 prose-code:px-1"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </article>
       </main>
     </>

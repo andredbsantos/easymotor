@@ -7,16 +7,15 @@ const labels: Record<IssueStatus, string> = {
 };
 
 const styles: Record<IssueStatus, string> = {
-  fixed: "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200",
-  warning: "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-200",
-  investigating:
-    "bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-200",
+  fixed: "bg-emerald-50 text-emerald-800 border border-emerald-200",
+  warning: "bg-amber-50 text-amber-800 border border-amber-200",
+  investigating: "bg-sky-50 text-sky-800 border border-sky-200",
 };
 
 export function StatusBadge({ status }: { status: IssueStatus }) {
   return (
     <span
-      className={`inline-flex rounded-full px-3 py-1 text-xs font-semibold ${styles[status]}`}
+      className={`inline-flex px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wider ${styles[status]}`}
     >
       {labels[status]}
     </span>

@@ -56,25 +56,19 @@ export function LandingFilters({
       : `/${lang}`;
 
   return (
-    <section className="mb-10 rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950">
-      <div className="mb-5">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-zinc-500">
-          SEO filters
-        </p>
-        <h2 className="mt-2 text-2xl font-bold">
-          Find a real brand or model page
-        </h2>
-        <p className="mt-2 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
-          Each filter points to an indexable URL with metadata built from the
-          vehicle brand, model, and year/version text.
-        </p>
-      </div>
+    <section className="mb-10 border border-neutral-200 bg-white p-5 sm:p-6">
+      <p className="text-xs font-semibold uppercase tracking-widest text-red-700 mb-2">
+        Quick Search
+      </p>
+      <h2 className="text-xl font-bold text-neutral-900 mb-4">
+        Find a brand or model
+      </h2>
 
-      <div className="grid gap-4 md:grid-cols-4">
-        <label className="text-sm font-medium">
-          Brand
+      <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <label className="block">
+          <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">Brand</span>
           <select
-            className="mt-2 w-full rounded-xl border border-zinc-300 bg-transparent px-3 py-3 dark:border-zinc-700"
+            className="mt-1.5 w-full border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 focus:border-red-700 focus:outline-none"
             onChange={(event) => {
               setBrandId(event.target.value);
               setModelId("");
@@ -90,10 +84,10 @@ export function LandingFilters({
           </select>
         </label>
 
-        <label className="text-sm font-medium">
-          Model / version
+        <label className="block">
+          <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">Model</span>
           <select
-            className="mt-2 w-full rounded-xl border border-zinc-300 bg-transparent px-3 py-3 dark:border-zinc-700"
+            className="mt-1.5 w-full border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 focus:border-red-700 focus:outline-none"
             onChange={(event) => setModelId(event.target.value)}
             value={modelId}
           >
@@ -106,48 +100,46 @@ export function LandingFilters({
           </select>
         </label>
 
-        <label className="text-sm font-medium">
-          Year / generation
+        <label className="block">
+          <span className="text-xs font-medium uppercase tracking-wider text-neutral-500">Year / Generation</span>
           <input
-            className="mt-2 w-full rounded-xl border border-zinc-300 bg-transparent px-3 py-3 dark:border-zinc-700"
+            className="mt-1.5 w-full border border-neutral-300 bg-white px-3 py-2.5 text-sm text-neutral-900 placeholder-neutral-400 focus:border-red-700 focus:outline-none"
             onChange={(event) => setYear(event.target.value)}
-            placeholder="e.g. Gen IV, 2007"
+            placeholder="e.g. 2007, Gen IV"
             value={year}
           />
         </label>
 
         <div className="flex items-end">
           <Link
-            className="inline-flex w-full justify-center rounded-xl bg-zinc-950 px-5 py-3 font-semibold text-white dark:bg-white dark:text-zinc-950"
+            className="inline-flex w-full justify-center bg-red-700 px-5 py-2.5 text-sm font-semibold text-white hover:bg-red-800 transition-colors"
             href={destination}
           >
-            Open SEO page
+            Search
           </Link>
         </div>
       </div>
 
       {filteredIssues.length > 0 ? (
-        <div className="mt-6 grid gap-3">
-          {filteredIssues.map((issue) => {
+        <div className="mt-5 border-t border-neutral-200 pt-4 grid gap-0">
+          {filteredIssues.map((issue, index) => {
             const model = models.find((item) => item.id === issue.modelId);
             const brand = brands.find((item) => item.id === issue.brandId);
 
-            if (!model || !brand) {
-              return null;
-            }
+            if (!model || !brand) return null;
 
             return (
               <Link
-                className="rounded-2xl border border-zinc-200 p-4 transition hover:bg-zinc-50 dark:border-zinc-800 dark:hover:bg-zinc-900"
+                className={`flex flex-col sm:flex-row sm:items-center justify-between gap-1 py-3 px-1 hover:bg-neutral-50 transition-colors ${index > 0 ? "border-t border-neutral-100" : ""}`}
                 href={`/${lang}/${brand.id}/${model.id}/${issue.id}`}
                 key={issue.id}
               >
-                <p className="text-sm text-zinc-500">
-                  {brand.name} {model.name} {model.years}
-                </p>
-                <h3 className="mt-1 font-semibold">
+                <span className="text-xs text-neutral-500 shrink-0">
+                  {brand.name} · {model.name} · {model.years}
+                </span>
+                <span className="font-medium text-sm text-neutral-900">
                   {localizedValue(issue.title, lang)}
-                </h3>
+                </span>
               </Link>
             );
           })}
